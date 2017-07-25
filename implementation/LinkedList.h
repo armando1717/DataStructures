@@ -7,9 +7,13 @@ template <class T>
 
 class LinkedList: public IList<T>
 {
+	//temp
+	static const int size=10;
+	T temp[size];
 	public:
-	 bool isEmpty();
-	bool insert(T data);
+		bool isEmpty();
+		bool insert(T data);
+		T* toArray();
 };
 
 #endif

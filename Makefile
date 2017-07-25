@@ -1,9 +1,9 @@
 
-SRC += Test.cpp \
+SRC += test/Test.cpp \
        implementation/ArrayList.cpp \
-       implementation/LinkedList.cpp
+      #implementation/LinkedList.cpp
 
-OBJ = "Test.o"
+OBJ = "run.o"
 
 all: $(SRC)
 	g++ -o  $(OBJ) $^

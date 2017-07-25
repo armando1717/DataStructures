@@ -12,3 +12,11 @@ bool LinkedList<T>::insert(T data){
 
 	return false;
 }
+
+template <typename T>
+T* LinkedList<T>::toArray()
+{
+	return temp;
+
+}
+
