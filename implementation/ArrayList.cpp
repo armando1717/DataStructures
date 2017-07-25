@@ -19,6 +19,7 @@ template <typename T>
 
 template <typename T>
 	bool ArrayList<T>::insert(T data){
+		if(size == ARRAY_LENGTH)
 		container[size] = data;
 		size++;
 	}
