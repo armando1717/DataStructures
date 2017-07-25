@@ -19,7 +19,8 @@ template <typename T>
 
 template <typename T>
 	bool ArrayList<T>::insert(T data){
-		cout<<"Insert"<<endl;
+		container[size] = data;
+		size++;
 	}
 
 template <typename T>
@@ -27,7 +28,8 @@ template <typename T>
 		
 		return container;
 	}
+
 template <typename T>
-int ArrayList<T>::getSize(){
-	return size;
-}
+	int ArrayList<T>::getSize(){
+		return size;
+	}
