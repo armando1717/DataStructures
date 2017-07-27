@@ -13,6 +13,7 @@ public:
 	ArrayList();
 	int getSize();
 	bool isEmpty();
+	bool isFull();
 	bool insert(T data);
 	T* toArray();
 };

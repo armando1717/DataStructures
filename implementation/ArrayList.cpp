@@ -15,13 +15,22 @@ template <typename T>
 			return true;
 		return false;
 	}
-	
+template <typename T>
+	bool ArrayList<T>::isFull(){
+		if(size == ARRAY_LENGTH){
+			return true;
+		}
+		return false;
+	}	
 
 template <typename T>
 	bool ArrayList<T>::insert(T data){
-		if(size == ARRAY_LENGTH)
-		container[size] = data;
-		size++;
+		if(!isFull()){
+			container[size] = data;
+			size++;
+		}else{
+			cout<<"List full, duplicating size"<<endl;
+		}
 	}
 
 template <typename T>
