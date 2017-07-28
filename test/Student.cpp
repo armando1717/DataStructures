@@ -4,3 +4,7 @@ int Student::getAge(){
 	return age;
 }
 
+void Student::setAge(int a){
+	age = a;
+}
+

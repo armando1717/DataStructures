@@ -9,7 +9,7 @@ class IList{
 
 public:
 	virtual bool isEmpty()=0;
-	virtual bool insert(T data)=0;
+	virtual bool insert(T* data)=0;
 	virtual T* toArray()=0;
 	virtual int getSize()=0;
 };

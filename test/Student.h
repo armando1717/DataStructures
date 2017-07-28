@@ -10,6 +10,7 @@ class Student{
 
 public:
 	int getAge();
+	void setAge(int a);
 
 };
 

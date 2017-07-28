@@ -9,12 +9,13 @@ class ArrayList : public IList<T>{
 	static const int ARRAY_LENGTH=50;
 	int size;
 	T container[ARRAY_LENGTH];
+	void duplicateArraySize();
 public:
 	ArrayList();
 	int getSize();
 	bool isEmpty();
 	bool isFull();
-	bool insert(T data);
+	bool insert(T* data);
 	T* toArray();
 };
 
